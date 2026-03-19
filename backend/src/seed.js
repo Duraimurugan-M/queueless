@@ -19,7 +19,7 @@ const SEED_DATA = {
   },
   doctor: {
     name: "Dr. Arjun Ravi",
-    mobile: "9000000001",
+    mobile: "9876543211",
     email: "dr.ravi@queueless.com",
     password: "Dr@123",
     specialization: "General Physician",
