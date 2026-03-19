@@ -4,6 +4,9 @@ const rateLimit = require("express-rate-limit");
 
 const app = express();
 
+// Required for Render/Railway/any proxy — fixes rate limiter X-Forwarded-For warning
+app.set('trust proxy', 1);
+
 // Fix: explicit origin required when frontend uses credentials
 app.use(cors({
   origin: process.env.FRONTEND_URL || "http://localhost:5173",
